@@ -1,0 +1,42 @@
+ <!DOCTYPE tiles-definitions PUBLIC  
+           "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+           "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+    <tiles-definitions>  
+        <definition name="base.definition"  
+            template="/WEB-INF/JSP/layout.jsp">  
+            <put-attribute name="title" value="" />  
+            <put-attribute name="header" value="/WEB-INF/JSP/header.jsp" />  
+            <put-attribute name="menu" value="/WEB-INF/JSP/menu.jsp" />  
+            <put-attribute name="body" value="" />  
+            <put-attribute name="footer" value="/WEB-INF/JSP/footer.jsp" />  
+        </definition>  
+      
+        <definition name="index" extends="base.definition">  
+            <put-attribute name="title" value="Home" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/index.jsp" />  
+        </definition>  
+      
+        <definition name="login" extends="base.definition">  
+            <put-attribute name="title" value="Login" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/Login.jsp" />  
+        </definition>
+        
+        <definition name="SuccessfulRegistration" extends="base.definition">  
+            <put-attribute name="title" value="Successful" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/SuccessfulRegistration.jsp" />  
+        </definition>
+        
+        <definition name="contactus" extends="base.definition">  
+            <put-attribute name="title" value="Contactus" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/contactus.jsp" />  
+        </definition>
+        
+        <definition name="aboutus" extends="base.definition">  
+            <put-attribute name="title" value="Aboutus" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/aboutus.jsp" />  
+        </definition>
+        <definition name="RegistrationError" extends="base.definition">  
+            <put-attribute name="title" value="ErrorinRegistration" />  
+            <put-attribute name="body" value="/WEB-INF/JSP/RegistrationError.jsp" />  
+        </definition>
+    </tiles-definitions>  
